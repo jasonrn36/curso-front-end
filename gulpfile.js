@@ -1,14 +1,19 @@
 const gulp = require('gulp');
 
 function funcaoPadrao(callback) {
-    console.log("\n\x1b[37mExecutando terefas em Paralelo no \x1b[1m \x1b[31mGULP \n\x1b[0m\x1b[33mEssa é a Primeira tarefa\x1b[37m");
-    callback();
+    setTimeout(function(){
+        console.log("\n\x1b[33mEssa tarefa só inicia apos 4 segundos\x1b[37m \n");
+        callback();
+
+    }, 3992);
 }
 
 function digaOi(callback) {
+        setTimeout(function(){
     console.log("\n\x1b[0m\x1b[33m Essa é a segunda tarefa junto com a primeira\x1b[37m");
     digaTchau();
     callback();
+    }, 991);
 
 }
 function digaTchau(){
