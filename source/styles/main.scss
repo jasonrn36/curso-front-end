@@ -1,4 +1,11 @@
 @use 'variaveis';
+
 body {
     background-color: variaveis.$corPrincipal;
+}
+
+h1 {
+    color: variaveis.$corTexto;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
