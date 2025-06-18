@@ -10,6 +10,8 @@
   "author": "Jason Ramalho Nasicmento",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^5.0.1"
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.89.2"
   }
 }
