@@ -10,4 +10,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.1] - 2014-05-31
 
 ### Added
-Adicionado a rquivo chengelog.md
+Adicionado arquivo chengelog.md
+deletado arquivo OláMundo.txt
+Incluido arquivo com meu nome
