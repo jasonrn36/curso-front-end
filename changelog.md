@@ -13,3 +13,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Adicionado a rquivo chengelog.md
 criadas novas branchs para tomas o lugas das anteriores
 criado nova branch para adicionar primeira página webls
+deletado arquivo da branch 005-cria-form
+deletado diretorio da branch 005-cria-form
