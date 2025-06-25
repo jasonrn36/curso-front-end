@@ -4,4 +4,31 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: rgb(249, 246, 239);
+}
+
+/* Area set color selectors */
+.titulo h1 {
+    color: rgb(41, 41, 41);
+}
+
+.menu ul, li {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+}
+
+.Esportes h1 {
+    color: green;
+}
+
+.Economia h1 {
+    color: rgb(130, 111, 5);
+}
+
+.Fama h1 {
+    color: rgb(70, 0, 128);
+}
+.creation-date {
+    color: rgb(189, 189, 189);
 }
