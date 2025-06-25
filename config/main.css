@@ -6,6 +6,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: rgb(249, 246, 239);
 }
+/*set scroll-behavior*/
+html {
+    scroll-behavior: smooth;
+}
 
 /* Area set color selectors */
 .titulo h1 {
