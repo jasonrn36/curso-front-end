@@ -4,78 +4,22 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: rgb(208, 208, 208);
-    color: black;
 
 }
 
 
-/*set scroll-behavior*/
-html {
-    scroll-behavior: smooth;
+header li {
+    display: inline;
+
 }
 
-/*set config container*/
 .container {
     width: 1366px;
     margin: 0 auto;
-    padding: 0 auto;
-    display: flex-box;
 }
 
-/*set header main*/
-header {
-    background-color: rgb(13, 66, 0);
-}
-/*title -behavior*/
-header h1 {
-    padding: 16px 20px;
-}
-/*set header main*/
-header li {
-    display: inline;
-    justify-content:space-between;
-    padding: 8px;
-}
-
-/* Area set color selectors */
-.titulo h1, p {
-    color: rgb(255, 255, 255);
-}
-
-.menu ul,
-li, a {
-    color: rgb(255, 255, 255);
-    list-style: none;
-    text-decoration: none;
-    
-}
-
-.Esportes h1 {
-    color: green;
-}
-
-.Economia h1 {
-    color: rgb(130, 111, 5);
-}
-
-.Fama h1 {
-    color: rgb(70, 0, 128);
-}
-
-/*set config articles*/
-.articles, article img {
+.articles article img {
     height: 180px;
 }
 
-/*set config articles*/
-.news-item, h2, h3, p {
-    background-color: aliceblue;
-    color: rgb(50, 50, 50);
-    display: flex;
-
-}
-
-.creation-date {
-    color: rgb(154, 154, 154);
-}
+.articles article
