@@ -64,9 +64,15 @@ li, a {
 }
 
 /*set config articles*/
+.articles, article img {
+    height: 180px;
+}
+
+/*set config articles*/
 .news-item, h2, h3, p {
     background-color: aliceblue;
     color: rgb(50, 50, 50);
+    display: flex;
 
 }
 
