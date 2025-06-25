@@ -4,22 +4,33 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: rgb(249, 246, 239);
+    background-color: rgb(208, 208, 208);
+    color: black;
+
 }
+
+
 /*set scroll-behavior*/
 html {
     scroll-behavior: smooth;
 }
 
-/* Area set color selectors */
-.titulo h1 {
-    color: rgb(41, 41, 41);
+/*set header main*/
+header {
+    background-color: rgb(74, 0, 20);
 }
 
-.menu ul, li {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+/* Area set color selectors */
+.titulo h1, p {
+    color: rgb(255, 255, 255);
+}
+
+.menu ul,
+li, a {
+    color: rgb(255, 255, 255);
+    list-style: none;
     text-decoration: none;
-    color: rgb(83, 83, 83);
+    
 }
 
 .Esportes h1 {
@@ -33,6 +44,14 @@ html {
 .Fama h1 {
     color: rgb(70, 0, 128);
 }
+
+/*set config articles*/
+.news-item, h2, h3, p {
+    background-color: aliceblue;
+    color: rgb(50, 50, 50);
+
+}
+
 .creation-date {
-    color: rgb(189, 189, 189);
+    color: rgb(154, 154, 154);
 }
