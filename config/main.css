@@ -15,9 +15,27 @@ html {
     scroll-behavior: smooth;
 }
 
+/*set config container*/
+.container {
+    width: 1366px;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex-box;
+}
+
 /*set header main*/
 header {
-    background-color: rgb(74, 0, 20);
+    background-color: rgb(13, 66, 0);
+}
+/*title -behavior*/
+header h1 {
+    padding: 16px 20px;
+}
+/*set header main*/
+header li {
+    display: inline;
+    justify-content:space-between;
+    padding: 8px;
 }
 
 /* Area set color selectors */
