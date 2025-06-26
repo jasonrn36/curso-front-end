@@ -7,20 +7,43 @@ body {
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*set config in header to boby*/
 body, header {
     background-color: rgb(243, 243, 243);
 }
 
 header li {
+    position: relative;
+    left: -10%;
     display: inline;
+    font-weight: bold;
+    margin-left: 16px;
 
 }
 
-header .container {
+header h1 {
+    position: relative;
+    left: 5%;
+}
+
+header li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+}
+
+header .container,
+footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(5, 0, 97);
+    color: azure;
 }
 
 .container {
