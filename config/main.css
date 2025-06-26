@@ -16,6 +16,8 @@ header nav li, a {
     display: inline;
     margin-left: 16px;
     color: #ecf0f1;
+    font-size: 24px;
+    text-decoration: none;
 }
 
 .container {
