@@ -17,3 +17,9 @@ header nav li, a {
     margin-left: 16px;
     color: #ecf0f1;
 }
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
