@@ -1,0 +1,131 @@
+*
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*set config in header to boby*/
+body, header {
+    background-color: rgb(243, 243, 243);
+}
+
+header li {
+    position: relative;
+    left: -10%;
+    display: inline;
+    font-weight: bold;
+    margin-left: 16px;
+
+}
+
+header h1 {
+    position: relative;
+    left: 5%;
+}
+
+header li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+}
+
+header .container,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(5, 0, 97);
+    color: azure;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles article img {
+    height: 220px;
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+    padding: 16px;
+}
+
+.section h3, 
+.articles article {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 16px;
+}
+
+.section h1 {
+    padding: 16px;
+}
+
+.articles article a {
+    background-color: rgb(0, 47, 101);
+    color: azure;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+.articles article p,
+.articles article a {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+.section h2 {
+    font-size: 32px;
+}
+
+#Esporte {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#Esporte .articles article a {
+    background-color:rgb(0, 108, 0);
+}
+
+#Economia {
+    background-color: rgba(255, 255, 0, 0.1);
+}
+
+#Economia .articles article a {
+    background-color:rgb(84, 73, 0);
+}
+
+#Fama {
+    background-color: rgba(93, 0, 151, 0.1);
+}
+
+#Fama .articles article a {
+    background-color:rgb(64, 0, 103);
+}
