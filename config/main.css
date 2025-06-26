@@ -27,4 +27,5 @@ header nav li, a {
 
 header .container {
     display: flex;
+    align-items: center;
 }
