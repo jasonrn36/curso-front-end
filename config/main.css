@@ -11,3 +11,9 @@ header {
     background-color: #182c61;
     color: #ecf0f1;
 }
+
+header nav li, a {
+    display: inline;
+    margin-left: 16px;
+    color: #ecf0f1;
+}
