@@ -12,6 +12,7 @@ header {
     color: #ecf0f1;
 }
 
+/*set config to links a*/
 header nav li, a {
     display: inline;
     margin-left: 16px;
@@ -20,6 +21,7 @@ header nav li, a {
     text-decoration: none;
 }
 
+/*set configuration for page container*/
 .container {
     max-width: 1280px;
     width: 100%;
@@ -27,6 +29,7 @@ header nav li, a {
 
 }
 
+/*  set configuration for header container*/
 header .container {
     display: flex;
     align-items: center;
