@@ -19,6 +19,10 @@ section h2 {
 
 header h1 {
     font-weight: normal;
+        text-shadow: 
+    0 0 1px rgba(52, 52, 52, 0.853), /* Sombra principal (opcional) */
+    3px 1px 5px rgb(225, 0, 255), /* Sombra principal (opcional) */
+    -3px -1px 5px rgb(0, 242, 255); /* Sombra principal (opcional) */
 }
 
 header h1,
@@ -77,10 +81,18 @@ section .container {
 
 section {
     padding: 24px 0;
+
 }
 
 section h2 {
+    text-shadow: 
+    0 0 5px rgba(227, 227, 227, 0.853), /* Sombra principal (opcional) */
+    1px 1px 5px rgb(225, 0, 255), /* Sombra principal (opcional) */
+    -1px -1px 5px rgb(0, 242, 255); /* Sombra principal (opcional) */
+
     margin-bottom: 16px;
+    color: #182c61;
+
 }
 
 section p {
