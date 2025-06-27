@@ -10,12 +10,32 @@ header {
     background-color: #182c61;
     color: #ecf0f1;
 }
+
+header,
+section h2 {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+header h1 {
+    font-weight: normal;
+}
+
+header h1,
+section h2 {
+    font-weight: normal;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+}
+
 /*set config to links a*/
 header nav li, a {
     display: inline;
     margin-left: 16px;
     color: #ecf0f1;
-    font-size: 24px;
+    font-size: 18px;
     text-decoration: none;
 }
 /*set configuration for page container*/
@@ -32,22 +52,40 @@ section .container {
     align-items: center;
     justify-content: space-between;
 }
-.container img {
+.container .cover-about {
     width: 45%;
+    margin-right: 32px;
 }
 /*set configuration to brands list*/
-.brands-list img {
+.brands-list li img {
+    width: 16%;
+}
+
+/*set width specificly in .imgplay image */
+.brands-list .imgplay {
     width: 10%;
 }
+
 .brands-list li {
     display: inline;
 }
+
 /*set configuration vertical aline*/
 section .container {
     align-items: flex-start;
 }
 
+section {
+    padding: 24px 0;
+}
 
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
 
 
 
