@@ -35,3 +35,12 @@ header .container {
     align-items: center;
     justify-content: space-between;
 }
+
+/*set configuration to brands list*/
+.brands-list img,
+.brands-list li {
+    height: 24px;
+    display: inline;
+    margin-left: 16px;
+    list-style: none;
+}
