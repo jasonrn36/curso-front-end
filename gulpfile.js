@@ -8,7 +8,7 @@ const imagemin = require('gulp-imagemin');
 
 function compriressImages(){
     return gulp.src('./source/images/*')
-    .pipe(imagemin)
+    .pipe(imagemin())
     .pipe(gulp.dest('./build/images'));
 }
 
@@ -29,34 +29,10 @@ function compilaSass() {
         .pipe(gulp.dest('./build/styles'));
 }
 
-function funcaoPadrao(callback) {
-    setTimeout(function(){
-        console.log("\n\x1b[33mEssa tarefa só inicia apos 4 segundos\x1b[37m \n");
-        callback();
+//Here is functions defaults to project
 
-    }, 3992);
-}
-
-function digaOi(callback) {
-        setTimeout(function(){
-    console.log("\n\x1b[0m\x1b[33m Essa é a segunda tarefa junto com a primeira\x1b[37m");
-    digaTchau();
-    callback();
-    }, 991);
-
-}
-function digaTchau(){
-    console.log("\x1b[0m\x1b[33m Essa é a terceira tarefa junto com a segunda\x1b[37m \n");
-}
-
-exports.default = gulp.parallel (funcaoPadrao, digaOi);
-exports.digaOi = digaOi;
-
-exports.sass = compilaSass;
-
-exports.watch = function() {
+exports.default = function() {
     gulp.watch('./source/styles/*.scss', { ignoreInitial: false }, gulp.series(compilaSass));
+        gulp.watch('./source/styles/*.scss', { ignoreInitial: false }, gulp.series(comprimeJavaScript));
+            gulp.watch('./source/styles/*.scss', { ignoreInitial: false }, gulp.series(compriressImages));
 }
-
-exports.javascript = comprimeJavaScript;
-exports.images = compriressImages;
