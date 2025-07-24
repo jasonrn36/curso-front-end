@@ -1,1 +1,0 @@
-let somar=require("./sum");console.log("Somar:",somar(5,20)),console.log("Repare que, aqui nós exportamos apenas a fórluma matemática,\n do arquivo [1m[35m SUM.JS [37m\n");
