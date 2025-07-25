@@ -1,9 +1,34 @@
 @use 'variaveis';
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: variaveis.$corPrincipal;
+    background-color: variaveis.$colorBackgroud;
+}
+
+h1 {
+    color: variaveis.$colorTitle;
+    font-family: "Winky Rough", sans-serif;
+}
+
+.menu ul, li, a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: variaveis.$colorMenu;
 }
 
 .container {
-    background-color: variables.$colorMain;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: variaveis.$colorContainer;
+}
+
+.container img {
+    width: 200px;
 }

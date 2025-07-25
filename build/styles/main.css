@@ -1,9 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(208, 208, 208);
 }
 
 h1 {
-  color: blue;
+  color: rgb(230, 19, 0);
+  font-family: "Winky Rough", sans-serif;
+}
+
+.menu ul, li, a {
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: rgba(147, 64, 31, 0.89);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(246, 246, 246);
+}
+
+.container img {
+  width: 200px;
 }
 /*# sourceMappingURL=maps/main.css.map */
