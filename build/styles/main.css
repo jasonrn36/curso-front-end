@@ -1,33 +1,119 @@
+/* This reset of settings make to everyting in page stay 
+    noboby spacementing, not line, not border. */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  background-color: rgb(208, 208, 208);
+/*############################################################*/
+/* Page body change settings */
+body > header {
+  background-color: #2f3640;
+  padding: 8px 0;
+  color: aliceblue;
 }
 
-h1 {
-  color: rgb(230, 19, 0);
-  font-family: "Winky Rough", sans-serif;
+/*############################################################*/
+/* Settings of header */
+header {
+  padding: 16px 0;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.8);
 }
 
-.menu ul, li, a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 1em;
-  color: rgba(147, 64, 31, 0.89);
-}
-
-.container {
+header .container {
   display: flex;
-  justify-content: space-between;
+  max-width: 100%;
   align-items: center;
-  background-color: rgb(246, 246, 246);
+  justify-content: space-between;
 }
 
-.container img {
-  width: 200px;
+header li {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header li a {
+  color: #efefef;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/*############################################################*/
+/* Settings of Sections */
+section {
+  padding: 16px 0;
+}
+
+section h2,
+.articles article {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: justify;
+}
+
+section h2 {
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*############################################################*/
+/* Settings of containers */
+.container {
+  width: 1366px;
+  margin: 0, auto;
+  justify-content: space-between;
+}
+
+.container h1 {
+  margin-left: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-shadow: 1px 1px 3px rgb(11, 220, 227);
+  color: white;
+}
+
+/*############################################################*/
+/* Settings of display by .articles and article*/
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.articles article img {
+  /*height: 180px; */
+  width: 100%;
+  float: left;
+}
+
+.articles article {
+  width: 30%;
+  padding: 10px 10px;
+}
+
+/* Settings of font, color, display and text decoration*/
+.articles article a {
+  background-color: #1a1046;
+  color: aliceblue;
+  padding: 8px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Settings of visual effects to links*/
+.articles article a:hover {
+  text-decoration: underline;
+}
+
+/* Settings of formating font and paragraph and links*/
+.articles article p,
+.articles article a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /*# sourceMappingURL=maps/main.css.map */

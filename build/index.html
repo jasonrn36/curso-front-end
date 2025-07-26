@@ -1,47 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../build/styles/main.css">
-    <!-- fonts area-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
-
-
-    <title>Teste de página em Gulp e SASS</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Gallery</title>
 </head>
 <body>
     <header>
-        <h1>Gallery Fauna</h1>
-            <div class="Menu">
-                    <ul>
-                        <li>
-                            <a href="Home">Home</a>
-                        </li>
-                        <li>
-                            <a href="Services">Services</a>
-                        </li>
-                        <li>
-                            <a href="Contacts">Contacts</a>
-                        </li>
-                        <li>
-                            <a href="About">About</a>
-                        </li>
-                        
-                    </ul>
-            </div>
+        <div class="container">
+            <h1><a href="#">Gallery</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#Fauna" > Fauna </a></li>
+                <li><a href="#About" > About </a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="container">
-    <h1>One site in Javascript</h1>
-    <h2>This is one image to bird owl</h2>
-    <img src="./images/bird-ga5d9ed257_1920.jpg" alt="bird owl">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime cumque iste quaerat incidunt libero quas asperiores? Ipsam non error, minus nobis quibusdam, atque veniam quidem quo asperiores explicabo sapiente quae?</p>
-    <img src="./images/lilies-g19bcb21a4_1920.jpg" alt="flowers Yellows">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate inventore facere explicabo consequatur? Totam iste fugit cumque reprehenderit quas temporibus perspiciatis dicta facilis, quisquam obcaecati dolore aperiam enim, in incidunt.</p>
-    </div>
+
+    <section id="Fauna">
+        <div class="container">
+            <div class="articles">
+            <article>
+                <h2> Fauna </h2>
+                <img src="./images/bird-ga5d9ed257_1920.jpg" id="bird owl" title="Bird Owl" />
+                <header><time class="creation-date">05/07/2024 as 15:00</time></header>
+        
+                <h3>Bird Owl in</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae atque,
+                &nbsp; dolorum eveniet quisquam quam nesciunt harum accusantium, nihil dolores
+                &nbsp; nulla corrupti culpa esse maiores, itaque perspiciatis ipsa quasi debitis?</p>
+                <a href="fama.html" title="Leia a notícia completa em" > Ler mais... </a>
+                </article>
+        
+            <article>
+                <h2> Fauna </h2>
+                <img src="./images/butterfly.jpg" id="butterfly" title="butterfly" />
+                <header><time class="creation-date">05/07/2024 as 16:20</time></header>
+
+                <h3>The butterfly</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+                &nbsp; neque error provident vero fuga repellat, expedita voluptatibus
+                &nbsp; illum consequuntur? Maxime harum quo quibusdam suscipit laboriosam explicabo repellendus debitis, at sit?</p>
+                <a href="sports.html" title="Leia a notícia completa em" > Ler mais... </a>
+            </article>
+
+                <article>
+                    <h2> Fauna </h2>
+                    <img src="./images/Ducks.jpg" id="Ducks" title="Ducks" />
+                    <header><time class="creation-date">05/07/2024 as 16:20</time></header>
+    
+                    <h3>Ducks</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                    &nbsp; elit. Consectetur culpa omnis illo? Culpa quisquam
+                    &nbsp; fugiat facere laboriosam porro mollitia, labore nulla suscipit
+                    &nbsp; eius corporis perspiciatis laborum neque pariatur expedita nesciunt? </p>
+                    <a href="sports.html" title="Leia a notícia completa em" > Ler mais... </a>
+                </article>
+            </div>
+        </div>
+    </section>
 
 
 </body>
