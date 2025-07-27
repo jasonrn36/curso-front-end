@@ -1,6 +1,28 @@
 @import "variables.less";
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(max-width: 1023px)";
 
 body {
     background-color: @colorBackgound;
     color: @colorText;
+
+
 }
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+      // Apply styles in differents small screens
+  @media @breakpointMobile {
+    max-width: 70%;
+  }
+
+        // Apply styles in differents small screens
+  @media @breakpointTablet {
+    max-width: 80%;
+  }
+
+}
+
