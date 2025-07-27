@@ -1,6 +1,7 @@
 @import "variables.less";
 @breakpointMobile: ~"(max-width: 767px)";
-@breakpointTablet: ~"(max-width: 1023px)";
+@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+@breakpointDesktop: ~"(min-width: 1024px) and (max-width: 1920px)";
 
 body {
     background-color: @colorBackgound;
@@ -14,15 +15,34 @@ body {
     width: 100%;
     margin: 0 auto;
 
-      // Apply styles in differents small screens
-  @media @breakpointMobile {
-    max-width: 70%;
-  }
+    img {
+        
+        margin: 0 auto;
+        display: block;
+
+        //Effect to cut border in image
+        max-width: 30%; /* Precisa ser um quadrado */
+        border-radius: 50%;
+    }
+
+        // Apply styles in differents small screens
+  @media @breakpointDesktop {
+    max-width: 80%;
+    background-color: rgb(47, 255, 0);
+  } 
 
         // Apply styles in differents small screens
   @media @breakpointTablet {
     max-width: 80%;
+    background-color: yellow;
+  } 
+      // Apply styles in differents small screens
+  @media @breakpointMobile {
+    max-width: 70%;
+    background-color: red;
   }
+
+
 
 }
 
