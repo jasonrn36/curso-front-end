@@ -3,6 +3,13 @@
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
 @breakpointDesktop: ~"(min-width: 1024px) and (max-width: 1920px)";
 
+
+// Mixin for call in all takes
+.marginBottom8 {
+  margin-bottom: 8px;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -24,32 +31,60 @@ body {
 
     img {
         
-        margin: 0 auto;
+        margin: 0 auto 24px;
         display: block;
 
         //Effect to cut border in image
-        max-width: 30%; /* Precisa ser um quadrado */
-        border-radius: 50%;
+        max-width: 15%; // Precisa ser um quadrado 
+        border-radius: 190px 110px;
+      margin: ;
+
     }
 
         // Apply styles in differents small screens
   @media @breakpointDesktop {
     max-width: 80%;
-    background-color: rgb(47, 255, 0);
+    /* background-color: rgb(47, 255, 0); */
   } 
 
         // Apply styles in differents small screens
   @media @breakpointTablet {
     max-width: 80%;
-    background-color: yellow;
+    /* background-color: yellow; */
   } 
       // Apply styles in differents small screens
   @media @breakpointMobile {
     max-width: 70%;
-    background-color: red;
+    /* background-color: red; */
+        img {
+        
+        margin: 0 auto 24px;
+        display: block;
+
+        //Effect to cut border in image
+        max-width: 45%; // Precisa ser um quadrado 
+        border-radius: 190px 110px;
+
+    }
   }
-
-
-
+}
+header {
+  padding: 24px;
 }
 
+.profile-bio {
+  text-align: center;
+
+  &-name {  // the commercial sign & was used to refer to the initial name profile-bio]
+    .marginBottom8();
+    font-size: 16px;
+  }
+  &-subtitle {
+    .marginBottom8();
+    font-size: 14px;
+  }
+  &-description {
+    font-size: 14px;
+    opacity: 70%;
+  }
+}
