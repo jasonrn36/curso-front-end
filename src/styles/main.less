@@ -29,7 +29,7 @@ body {
     width: 100%;
     margin: 0 auto;
 
-    img {
+    .profile-avatar {
         
         margin: 0 auto 24px;
         display: block;
@@ -55,7 +55,7 @@ body {
   @media @breakpointMobile {
     max-width: 70%;
     /* background-color: red; */
-        img {
+        .profile-avatar {
         
         margin: 0 auto 24px;
         display: block;
@@ -86,4 +86,32 @@ header {
     font-size: 14px;
     opacity: 70%;
   }
+}
+
+nav, ul,
+li, a  {
+  color: @colorText;
+
+}
+
+.menu,
+.social-links { // added class social-links for organizyng
+  display: flex;
+  justify-content: space-between;
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+
+  li { // inside have li to configuring list
+  list-style: none;
+  img  {
+    max-width: 20%;
+    transition: all ease .3;
+    &:hover{
+      transform: scale(1.8);
+    }
+  }
+
+  }
+
 }
