@@ -1,4 +1,5 @@
-@import "variables.less";
+@import "mapas.less";
+
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
 @breakpointDesktop: ~"(min-width: 1024px) and (max-width: 1920px)";
@@ -18,8 +19,8 @@
 }
 
 body {
-    background-color: @colorBackgound;
-    color: @colorText;
+    background-color: #Colors[backgroundColors];
+    color: #Colors[TextColors];
 
 
 }
@@ -90,7 +91,7 @@ header {
 
 nav, ul,
 li, a  {
-  color: @colorText;
+  color: #Colors[TextColors];
 
 }
 
