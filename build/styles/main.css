@@ -10,13 +10,17 @@ body {
 li {
   list-style: none;
 }
+.menu a {
+  color: white;
+}
 .container {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
 }
 header {
-  background-color: rgba(170, 166, 157, 0.5);
+  background: linear-gradient(rgba(96, 89, 89, 0.9), rgba(17, 5, 0, 0.9));
+  /* camada de cor */
   position: sticky;
   top: 0;
   left: 0;
@@ -45,6 +49,10 @@ header .container {
   text-decoration: none;
 }
 #doces {
+  padding: 56px 0;
+  scroll-margin-top: 155px;
+}
+#salgados {
   padding: 56px 0;
   scroll-margin-top: 155px;
 }
