@@ -5,7 +5,7 @@
   font-family: Roboto, sans-serif;
 }
 body {
-  background-color: #e30000;
+  background-color: #f7f1e3;
 }
 li {
   list-style: none;
@@ -16,7 +16,7 @@ li {
   margin: 0 auto;
 }
 header {
-  background-color: #182C61;
+  background-color: #aaa69d;
   position: sticky;
   top: 0;
   left: 0;
@@ -35,7 +35,6 @@ header .container {
   margin-left: 24px;
 }
 .menu li a {
-  color: #fff;
   text-decoration: none;
 }
 section {
@@ -55,16 +54,12 @@ section {
 }
 .product-button {
   display: block;
-  background-color: #44bd32;
   color: #fff;
   text-align: center;
   padding: 8px 0;
   border-radius: 8px;
   margin-top: 8px;
   text-decoration: none;
-}
-.product-button:hover {
-  background-color: #4cd137;
 }
 @media screen and (max-width: 1023px) {
   .container {
