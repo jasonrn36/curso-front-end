@@ -48,14 +48,7 @@ header .container {
     padding: 16px 0;
 }
 
-/*
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 0;
-}
-     */
+
 
 .menu {
     display: flex;
@@ -73,6 +66,7 @@ header .container {
 
 #doces {
     padding: 56px 0;
+    scroll-margin-top: 155px; // feito para parar o scroll antes do header
 }
 
 .products {
@@ -136,6 +130,32 @@ header .container {
     background-color: yellow;
     .products {
         display: block;
+    }
+    // Área do menu ul li a
+    .menu {
+        display: block;
+        text-align: center;
+    }
+
+    // Área do bloco menu
+    header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding: 8px 0;
+    }
+
+    // Área do bloco de imagem
+    .branding {
+        display: flex;
+        justify-content: space-between;
+        img {
+        position: relative;
+        left: 15px;
+        margin: 0 auto;
+        width: 35%;
+          }
     }
 
     .product-item  {
