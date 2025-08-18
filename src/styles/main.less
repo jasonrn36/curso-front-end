@@ -1,5 +1,7 @@
 @import "Cores.less";
-@media @breackpointModile ~ "(max-width: 767px)";
+@breackpointModile: ~"(max-width: 767px)";
+@breackpointTablet: ~"(max-width: 1023px)";
+
 
 * {
     margin: 0;
@@ -8,15 +10,16 @@
     font-family: Roboto, sans-serif;
 }
 
+// Área do Body
 body {
-  //  background-color
+//  background-color
    background-color: @CorDoFundo;
 }
-
+// Área dos links
 li {
     list-style: none;
 }
-
+// Área do container
 .container {
     max-width: 1024px;
     width: 100%;
@@ -30,14 +33,29 @@ header {
     left: 0;
 }
 
+.branding {
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 20%;
+    }
+}
 
+header .container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 16px 0;
+}
 
+/*
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px 0;
 }
+     */
 
 .menu {
     display: flex;
@@ -53,7 +71,7 @@ header .container {
     text-decoration: none;
 }
 
-section {
+#doces {
     padding: 56px 0;
 }
 
@@ -98,19 +116,24 @@ section {
 }
 
 // Mediaquery para Tablet
-@media screen and (max-width: 767px) {
+@media @breackpointTablet {
+    max-width: 80%;
+    background-color: yellow;
     .products {
         display: block;
+
     }
 
     .product-item  {
         margin-bottom: 32px;
     }
+
 }
 
 // Mediaquery para Smartphone
 @media @breackpointModile {
     max-width: 70%;
+    background-color: yellow;
     .products {
         display: block;
     }
