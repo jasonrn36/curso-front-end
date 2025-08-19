@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
+    color: @CorDoTexto;
 }
 
 // Área do Body
@@ -21,13 +22,17 @@ li {
 }
 
 .menu a {
-    color: @CorDoTexto;
+    color: @CorMenuHeader;
 }
 // Área do container
 .container {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+    color: @CorDoTexto;
+    h2 {
+        padding-bottom: 16px;
+    }
 }
 
 header {
@@ -36,6 +41,7 @@ header {
     linear-gradient(rgba(96, 89, 89, 0.9), rgba(17, 5, 0, 0.9)); /* camada de cor */
 
     position: sticky;
+    height: 80px;
     top: 0;
     left: 0;
 }
@@ -43,8 +49,11 @@ header {
 .branding {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     img {
-        width: 20%;
+
+        width: 10%;
+        border-radius: 100px;
     }
 }
 
@@ -52,7 +61,7 @@ header .container {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 16px 0;
+    padding: 3px 0;
 }
 
 
@@ -73,12 +82,12 @@ header .container {
 
 #doces {
     padding: 56px 0;
-    scroll-margin-top: 155px; // feito para parar o scroll antes do header
+    scroll-margin-top: 26px; // feito para parar o scroll antes do header
 }
 
 #salgados {
     padding: 56px 0;
-    scroll-margin-top: 155px; // feito para parar o scroll antes do header
+    scroll-margin-top: 26px; // feito para parar o scroll antes do header
 }
 
 .products {
@@ -88,6 +97,21 @@ header .container {
     column-gap: 1%;
     row-gap: 4%;
     width: 100%;
+
+    .product-button {
+    display: block;
+    color: @CorMenuHeader;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+    background-color: @CorDoTexto;
+    &:hover {
+        background-color: @CorDosLinks;
+    }
+}
+
 }
 
 .product-item img {
@@ -95,18 +119,46 @@ header .container {
     border-radius: 16px;
 }
 
-.product-button {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 8px 0;
-    border-radius: 8px;
-    margin-top: 8px;
+
+.social-links { 
+    margin-top: 16px;
+
+    li {
+    display: inline;
+    padding: 8px;
+    }
+
+    a {
     text-decoration: none;
+    }
+
+    img {
+        width: 3vh;
+    }
 }
 
-.product-button:hover {
+footer {
+    margin-top: 16px;
+    align-items: center;
+    text-align: center;
+    .digitado {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid #000;
+        width: 0;
+        animation: digitar 15s steps(80, end) infinite, cursor 1.5s step-end infinite;
+        }
 
+        @keyframes digitar {
+        0% { width: 0; }
+        50% { width: 100%; }
+        100% { width: 0; }
+        }
+
+        @keyframes cursor {
+        0%, 100% { border-color: transparent; }
+        50% { border-color: black; }
+        }
 }
 
 // Mediaquery para PC
@@ -133,6 +185,16 @@ header .container {
     .product-item  {
         margin-bottom: 32px;
     }
+
+    #doces {
+    padding: 56px 0;
+    scroll-margin-top: 60px; // feito para parar o scroll antes do header
+}
+
+#salgados {
+    padding: 56px 0;
+    scroll-margin-top: 60px; // feito para parar o scroll antes do header
+}
 
 }
 
@@ -172,6 +234,16 @@ header .container {
 
     .product-item  {
         margin-bottom: 32px;
+    }
+
+    #doces {
+    padding: 56px 0;
+    scroll-margin-top: 155px; // feito para parar o scroll antes do header
+    }
+
+    #salgados {
+    padding: 56px 0;
+    scroll-margin-top: 155px; // feito para parar o scroll antes do header
     }
 
 }
