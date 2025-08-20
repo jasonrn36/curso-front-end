@@ -22,14 +22,14 @@ li {
 }
 
 .menu a {
-    color: @CorMenuHeader;
+    color: @CorMenuHeader; //mikin da cor do cabeçalho
 }
 // Área do container
 .container {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    color: @CorDoTexto;
+    color: @CorDoTexto; //mixin da cor do texto
     h2 {
         padding-bottom: 3px;
     }
@@ -100,16 +100,16 @@ header .container {
 
     .product-button {
     display: block;
-    color: @CorMenuHeader;
+    color: @CorMenuHeader; // mixin da cor do Cabeçalho
     text-align: center;
     padding: 8px 0;
     border-radius: 8px;
     margin-top: 8px;
     text-decoration: none;
-    background-color: @CorDoTexto;
+    background-color: @CorDoTexto; //mixin da cor do texto
     &:hover {
-        background-color: @CorDosLinks;
-    }
+        background-color: @CorDosLinks; //mixin da cor dos links
+    } 
 }
 
 }
@@ -119,27 +119,26 @@ header .container {
     border-radius: 16px;
 }
 
-
-.social-links { 
-    margin-top: 16px;
-
-    li {
-    display: inline;
-    padding: 8px;
-    }
-
-    a {
+#contatos, ul, li, a {
     text-decoration: none;
-    }
 
-    img {
-        width: 3vh;
-        transition: transform 0.3s ease-in-out;
-        &:hover{
-            transform: scale(1.5);
+        .social-links { 
+        margin-top: 16px;
+        li {
+        display: inline;
+        padding: 8px;
+        }
+        img {
+            width: 3vh;
+            transition: transform 0.3s ease-in-out;
+            &:hover{
+                transform: scale(1.5);
+            }
         }
     }
+
 }
+
 
 footer {
     margin-top: 16px;
@@ -163,7 +162,6 @@ footer {
 // Mediaquery para Tablet
 @media @breackpointTablet {
     max-width: 80%;
-    background-color: yellow;
     .products {
         display: block;
 
@@ -224,7 +222,8 @@ footer {
 
 
     .product-item  {
-        margin-bottom: -50px;
+        margin-bottom: 0px;
+        padding-bottom: 10px;
     }
 
     #doces {

@@ -89,21 +89,36 @@ header .container {
   width: 100%;
   border-radius: 16px;
 }
-.social-links {
+#contatos,
+ul,
+li,
+a {
+  text-decoration: none;
+}
+#contatos .social-links,
+ul .social-links,
+li .social-links,
+a .social-links {
   margin-top: 16px;
 }
-.social-links li {
+#contatos .social-links li,
+ul .social-links li,
+li .social-links li,
+a .social-links li {
   display: inline;
   padding: 8px;
 }
-.social-links a {
-  text-decoration: none;
-}
-.social-links img {
+#contatos .social-links img,
+ul .social-links img,
+li .social-links img,
+a .social-links img {
   width: 3vh;
   transition: transform 0.3s ease-in-out;
 }
-.social-links img:hover {
+#contatos .social-links img:hover,
+ul .social-links img:hover,
+li .social-links img:hover,
+a .social-links img:hover {
   transform: scale(1.5);
 }
 footer {
@@ -123,7 +138,6 @@ footer {
 }
 @media (max-width: 1023px) {
   max-width: 80%;
-  background-color: yellow;
   .products {
     display: block;
   }
@@ -167,7 +181,8 @@ footer {
     width: 20%;
   }
   .product-item {
-    margin-bottom: -50px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
   }
   #doces {
     padding: 10px 0;
