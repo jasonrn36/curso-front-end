@@ -9,4 +9,7 @@ module.exports = function(grunt) {
             }, 3000);
 
          })
+
+        grunt.registerTask('default', ['olaGrunt']);
+
 }
