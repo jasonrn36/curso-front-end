@@ -18,14 +18,17 @@ module.exports = function(grunt) {
                }
             }
          },
+
          sass: {
             dist: {
-               files: {
+               options: {
+                     style: 'compressed'
+               },
+                    files: {
                   'main2.css': 'main.scss'
+                     }
+                  }
                }
-            }
-         }
-
          })
 
          grunt.registerTask('OlaGrunt', function() {
@@ -37,7 +40,8 @@ module.exports = function(grunt) {
          })
 
          grunt.loadNpmTasks('grunt-contrib-less');
+            grunt.loadNpmTasks('grunt-contrib-sass');
         grunt.registerTask('default', ['less', 'sass']);
-         grunt.loadNpmTasks('grunt-contrib-sass');
+
 
 }
