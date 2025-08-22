@@ -1,3 +1,5 @@
+const { option } = require("grunt");
+
 module.exports = function(grunt) { 
     grunt.initConfig({
          pkg: grunt.file.readJSON('package.json'),
@@ -7,7 +9,14 @@ module.exports = function(grunt) {
                   'main.css' : 'main.less'
                }
             },
-            production
+            production: {
+               options: {
+                  compress: true,
+               },
+               files: {
+                  'main.min.css': 'main.less'
+               }
+            }
          }
 
          })
