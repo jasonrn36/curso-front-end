@@ -17,6 +17,13 @@ module.exports = function(grunt) {
                   'main.min.css': 'main.less'
                }
             }
+         },
+         sass: {
+            dist: {
+               files: {
+                  'main2.css': 'main.scss'
+               }
+            }
          }
 
          })
@@ -30,7 +37,7 @@ module.exports = function(grunt) {
          })
 
          grunt.loadNpmTasks('grunt-contrib-less');
-
-        grunt.registerTask('default', ['less']);
+        grunt.registerTask('default', ['less', 'sass']);
+         grunt.loadNpmTasks('grunt-contrib-sass');
 
 }
