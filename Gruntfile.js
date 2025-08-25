@@ -18,12 +18,20 @@ module.exports = function(grunt) {
                      'dist/styles/main.min.css': 'src/styles/main.less'
                   }
                },
+         },
+         watch: {
+               less: {
+                  files: ['src/styles/**/*.less'], // Aqui os asteriscos indicam que ele ira executar 
+                                                   // todas as pastas tentro de styles, e tambem todo arquivo .less
+                  tasks: ['less:development']
+               }
          }
     })
 
          grunt.loadNpmTasks('grunt-contrib-less');
          // tarefa de conteudo construido
-        grunt.registerTask('default', ['less:development']);
+      grunt.loadNpmTasks('grunt-contrib-watch'); // AQUI FICA O GRUNT WATCH PARA MODIFICAR E CONTINUAR EXECUTANDO
+         grunt.registerTask('default', ['watch']); // aqui foi modificado paea watch
       //tarefa de conteudo a ser publicado
-        grunt.registerTask('build', ['less:production']);
+            grunt.registerTask('build', ['less:production']);
 }
