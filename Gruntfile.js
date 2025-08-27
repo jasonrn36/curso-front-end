@@ -31,6 +31,9 @@ module.exports = function(grunt) {
          grunt.loadNpmTasks('grunt-contrib-less');
          // tarefa de conteudo construido
       grunt.loadNpmTasks('grunt-contrib-watch'); // AQUI FICA O GRUNT WATCH PARA MODIFICAR E CONTINUAR EXECUTANDO
+      grunt.loadNpmTasks('grunt-replace');
+
+
          grunt.registerTask('default', ['watch']); // aqui foi modificado paea watch
       //tarefa de conteudo a ser publicado
             grunt.registerTask('build', ['less:production']);
