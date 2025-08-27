@@ -22,19 +22,37 @@ module.exports = function(grunt) {
          watch: {
                less: {
                   files: ['src/styles/**/*.less'], // Aqui os asteriscos indicam que ele ira executar 
-                                                   // todas as pastas tentro de styles, e tambem todo arquivo .less
                   tasks: ['less:development']
                }
+         },
+         replace: {
+            dev: {
+               options: {
+                  patterns: [
+                     {
+                        match: 'ENDERECO_DO_CSS',
+                        replacement: './src/styles/main.css'
+
+                     }
+                  ]
+               },
+               files: [
+                  {
+                     expand: true,
+                     flatten: true,
+                     src: ['src/index.html'],
+                     dest: 'dev/'
+                  }
+               ]
+            }
          }
     })
 
-         grunt.loadNpmTasks('grunt-contrib-less');
-         // tarefa de conteudo construido
-      grunt.loadNpmTasks('grunt-contrib-watch'); // AQUI FICA O GRUNT WATCH PARA MODIFICAR E CONTINUAR EXECUTANDO
+      grunt.loadNpmTasks('grunt-contrib-less');
+      grunt.loadNpmTasks('grunt-contrib-watch'); 
       grunt.loadNpmTasks('grunt-replace');
 
 
-         grunt.registerTask('default', ['watch']); // aqui foi modificado paea watch
-      //tarefa de conteudo a ser publicado
+         grunt.registerTask('default', ['watch']); 
             grunt.registerTask('build', ['less:production']);
 }
