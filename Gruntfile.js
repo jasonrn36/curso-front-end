@@ -27,12 +27,12 @@ module.exports = function(grunt) {
          },
 
          replace: {
-               dev: {
+               dist: {
                   options: {
                      patterns: [
                         {
                            match: 'Endereco_Do_CSS',
-                           replacement: './styles/main.css'
+                           replacement: './styles/main.min.css'
                         }
                      ]
                   },
@@ -40,20 +40,31 @@ module.exports = function(grunt) {
                      {
                         expand: true,
                         flatten: true,
-                        src: ['src/index.html'],
-                        dest: 'dev/'
+                        src: ['prebuild/index.html'],
+                        dest: 'dist/'
                      }
                   ]
                }
-         }
-
-
+         },
+            htmlmin: {
+               dist: {
+                  options: {
+                     removeComments:true,
+                     collapseWhiteSpace: true,
+                  },
+                  //Aqui: pasta temporária ==> depois para ==> 'src/index.html'
+                  files: {
+                     'prebuild/index.html': 'src/index.html'
+                  }
+               }
+            }
     })
 
       grunt.loadNpmTasks('grunt-contrib-less');
       grunt.loadNpmTasks('grunt-contrib-watch'); 
          grunt.loadNpmTasks('grunt-replace');
+               grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
          grunt.registerTask('default', ['watch']); 
-            grunt.registerTask('build', ['less:production']);
+            grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist']);
 }
