@@ -1,0 +1,1 @@
+console.log('Arquivo 02 \nJá este arquivo está na mesma pasta só que é do segundo arquivo.\no que fiz complementar um pedaço desse texto aqui.');

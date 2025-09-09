@@ -1,0 +1,1 @@
+console.log('Arquivo 01 \nEste texto é do arquivo 01, que está na pasta js,\ncontendo apenas este console.log.');

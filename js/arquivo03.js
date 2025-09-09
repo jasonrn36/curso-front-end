@@ -1,0 +1,1 @@
+console.log('Arquivo 03  \nEntão usei o arquivo 03 para finalizar o que faltava dos outros dois arquivos.\nE assim ficou completo o texto dos três arquivos juntos.');
