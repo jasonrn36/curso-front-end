@@ -1,3 +1,3 @@
 console.log('Arquivo 01 \nEste texto é do arquivo 01, que está na pasta js,\ncontendo apenas este console.log.');
-console.log('Arquivo 02 \nJá este arquivo está na mesma pasta só que é do segundo arquivo.\no que fiz complementar um pedaço desse texto aqui.');
+console.log('Arquivo 02 \nJá este texto está na mesma pasta só que é do segundo arquivo.\no que fiz complementar um pedaço desse texto aqui.');
 console.log('Arquivo 03  \nEntão usei o arquivo 03 para finalizar o que faltava dos outros dois arquivos.\nE assim ficou completo o texto dos três arquivos juntos.');
