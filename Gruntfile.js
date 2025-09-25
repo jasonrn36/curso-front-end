@@ -1,5 +1,3 @@
-const { option } = require("grunt");
-
 module.exports = function(grunt) { 
     grunt.initConfig({
          pkg: grunt.file.readJSON('package.json'),
@@ -23,16 +21,20 @@ module.exports = function(grunt) {
                less: {
                   files: ['src/styles/**/*.less'], // Aqui os asteriscos indicam que ele ira executar 
                   tasks: ['less:development']
+               },
+               html: {
+                  files: ['src/index.html'],
+                   tasks: ['replace:dist']
                }
          },
 
          replace: {
-               dist: {
+               dev: {
                   options: {
                      patterns: [
                         {
                            match: 'Endereco_Do_CSS',
-                           replacement: './styles/main.min.css'
+                           replacemment: './styles/main.min.css'
                         }
                      ]
                   },
@@ -61,12 +63,12 @@ module.exports = function(grunt) {
             clean: ['prebuild']
     })
 
-      grunt.loadNpmTasks('grunt-contrib-less');
-      grunt.loadNpmTasks('grunt-contrib-watch'); 
-         grunt.loadNpmTasks('grunt-replace');
-               grunt.loadNpmTasks('grunt-contrib-htmlmin');
-                  grunt.loadNpmTasks('grunt-contrib-clean');
+   grunt.loadNpmTasks('grunt-contrib-less');
+   grunt.loadNpmTasks('grunt-contrib-watch'); 
+   grunt.loadNpmTasks('grunt-replace');
+   grunt.loadNpmTasks('grunt-contrib-htmlmin');
+   grunt.loadNpmTasks('grunt-contrib-clean');
 
-         grunt.registerTask('default', ['watch']); 
-            grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist','clean']);
+   grunt.registerTask('default', ['watch']); 
+   grunt.registerTask('clean','build', ['less:production', 'htmlmin:dist', 'replace:dist']);
 }
